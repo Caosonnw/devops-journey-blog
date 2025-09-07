@@ -1,0 +1,36 @@
+name: Deploy Hugo site
+
+on:
+  push:
+    branches: [main] # build khi push vào main
+  workflow_dispatch: # cho phép chạy tay
+
+permissions:
+  contents: write # cần để push branch gh-pages
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          submodules: true # TRUE nếu themes/PaperMod là submodule
+          fetch-depth: 0
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: "0.149.1" # >= 0.146.0 cho PaperMod
+          extended: true
+
+      - name: Build
+        run: hugo --minify
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: ./public
+          # cname: portfolio.caosonnw.dev   # mở nếu dùng custom domain
