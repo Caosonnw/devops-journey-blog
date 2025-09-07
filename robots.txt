@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://caosonnw.github.io/devops-journey-blog/sitemap.xml
