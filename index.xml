@@ -14,7 +14,7 @@ xuống hàng.&lt;/p&gt;
 &lt;li&gt;Bullet 2.2&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Bullet 3&lt;/li&gt;
+&lt;li&gt;Bullet &lt;strong&gt;3&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;ol&gt;
 &lt;li&gt;Mục 1&lt;/li&gt;
@@ -72,4 +72,9 @@ xuống hàng.&lt;/p&gt;
 &lt;/table&gt;
 &lt;hr&gt;
 &lt;h2 id="3-ảnh--figure"&gt;3) Ảnh &amp;amp; Figure&lt;/h2&gt;
-&lt;p&gt;Ảnh đơn giản (đặt file vào &lt;code&gt;static/images/pipeline.png&lt;/code&gt;):&lt;/p&gt;</description></item></channel></rss>
+&lt;p&gt;Ảnh đơn giản (đặt file vào &lt;code&gt;static/images/pipeline.png&lt;/code&gt;):&lt;/p&gt;</description></item><item><title>Install GitLab EE on Ubuntu 22.04: Step-by-Step Guide</title><link>https://devops.caosonnw.dev/posts/install-gitlab/</link><pubDate>Sun, 07 Sep 2025 00:00:00 +0000</pubDate><guid>https://devops.caosonnw.dev/posts/install-gitlab/</guid><description>&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Target&lt;/strong&gt;: This guide is for beginners and self-learners who want to practice DevOps by installing &lt;em&gt;GitLab EE on Ubuntu 22.04&lt;/em&gt;. I&amp;rsquo;ll use VMware to run a virtual machine so you don&amp;rsquo;t need to spend money on renting servers or cloud resources — perfect for building your own lab at home.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h1 id="introduction-"&gt;Introduction ✨&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;What is GitLab EE?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;GitLab EE (Enterprise Edition) is the commercial version of GitLab, offering advanced features and professional support for large enterprises and complex organizations. It includes enhanced user management, enterprise-grade security, high scalability, and dedicated technical support to help companies meet compliance and security requirements.&lt;/p&gt;</description></item></channel></rss>
