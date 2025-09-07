@@ -1,0 +1,78 @@
+baseURL: "https://caosonnw.github.io/"
+title: "Caosonnw | DevOps Journey & Blog | "
+theme: "PaperMod"
+
+pagination:
+  pagerSize: 5
+
+outputs:
+  home: ["HTML", "RSS", "JSON"]
+  section: ["HTML", "RSS"]
+  taxonomy: ["HTML", "RSS"]
+  term: ["HTML", "RSS"]
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+params:
+  description: "Sharing my DevOps projects, learning journey, and hands-on experiences with CI/CD, Jenkins, Docker, Kubernetes, and Cloud AWS."
+
+  homeInfoParams:
+    Title: "Hi, I'm Caosonnw aka Elbio 👋"
+    Content: >
+      👉 DevOps Journey — sharing hands-on notes on CI/CD, Jenkins, Docker, Kubernetes, and Cloud AWS.
+      Here you’ll find my latest blog posts and featured projects.
+
+  socialIcons:
+    - name: github
+      url: "https://github.com/Caosonnw"
+    - name: linkedin
+      url: "https://www.linkedin.com/in/maivu-caoson/"
+    - name: email
+      url: "mailto:maivucaoson.forwork@gmail.com"
+    - name: portfolio
+      url: "https://portfolio.caosonnw.dev"
+
+  # Các section sẽ hiển thị ở trang Home
+  mainSections: ["posts"]
+
+  ShowReadingTime: true
+  ShowShareButtons: false
+  ShowPostNavLinks: false
+  ShowCodeCopyButtons: true
+  defaultTheme: "dark"
+  ShowToc: true
+  ShowSearch: true
+
+  assets:
+    favicon: "/logos/og-image-1200x630.png"
+    favicon16x16: "/logos/favicon-16x16.png"
+    favicon32x32: "/logos/favicon-32x32.png"
+    apple_touch_icon: "/logos/apple-touch-icon.png"
+
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    limit: 10
+    keys: ["title", "summary", "content", "tags"]
+
+menu:
+  main:
+    - identifier: home
+      name: Home
+      url: /
+      weight: 1
+    - identifier: posts
+      name: Posts
+      url: /posts/
+      weight: 2
+    - identifier: search
+      name: Search
+      url: /search/
+      weight: 10
