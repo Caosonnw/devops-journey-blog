@@ -73,13 +73,28 @@
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/posts/" title="Posts">
-                    <span>Posts</span>
+                <a href="http://localhost:1313/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/search/" title="Search (Alt &#43; /)" accesskey=/>
-                    <span>Search</span>
+                <a href="http://localhost:1313/series/ci-cd/" title="CI/CD">
+                    <span>CI/CD</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/series/docker/" title="Docker">
+                    <span>Docker</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/series/k8s/" title="K8s">
+                    <span>K8s</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/series/aws/" title="AWS">
+                    <span>AWS</span>
                 </a>
             </li>
         </ul>
@@ -92,6 +107,9 @@
 
 <ul class="terms-tags">
     <li>
+        <a href="http://localhost:1313/categories/ci-cd/">CI-CD <sup><strong><sup>1</sup></strong></sup> </a>
+    </li>
+    <li>
         <a href="http://localhost:1313/categories/devops/">DevOps <sup><strong><sup>1</sup></strong></sup> </a>
     </li>
 </ul>
@@ -102,8 +120,7 @@
 
     <span>
         Powered by
-        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
-        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+        <a href="https://portfolio.caosonnw.dev/" rel="noopener noreferrer" target="_blank">Caosonnw</a>
     </span>
 </footer>
 <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
@@ -111,6 +128,25 @@
         <path d="M12 6H0l6-6z" />
     </svg>
 </a>
+<script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.8/dist/medium-zoom.min.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    
+    const zoom = mediumZoom(
+      ".post-content img.zoomable, article img.zoomable",
+      {
+        margin: 24, 
+        background: "rgba(0,0,0,.8)", 
+        scrollOffset: 0,
+      }
+    );
+
+    
+    
+    zoom.detach(".nozoom");
+  });
+</script>
+
 
 <script>
     let menu = document.getElementById('menu')

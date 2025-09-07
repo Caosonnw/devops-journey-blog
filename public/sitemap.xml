@@ -11,6 +11,12 @@
     <loc>http://localhost:1313/tags/ci-cd/</loc>
     <lastmod>2025-09-07T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/categories/ci-cd/</loc>
+    <lastmod>2025-09-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/series/ci-cd/</loc>
+    <lastmod>2025-09-07T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/posts/docker-ci-cd/</loc>
     <lastmod>2025-09-07T00:00:00+00:00</lastmod>
   </url><url>
@@ -20,20 +26,30 @@
     <loc>http://localhost:1313/categories/devops/</loc>
     <lastmod>2025-09-07T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/series/docker/</loc>
+    <lastmod>2025-09-07T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/tags/docker/</loc>
     <lastmod>2025-09-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/hugo/</loc>
-    <lastmod>2025-09-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/papermod/</loc>
+    <loc>http://localhost:1313/posts/install-gitlab/</loc>
     <lastmod>2025-09-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/</loc>
     <lastmod>2025-09-07T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/series/</loc>
+    <lastmod>2025-09-07T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/tags/</loc>
     <lastmod>2025-09-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/ubuntu/</loc>
+    <lastmod>2025-09-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/series/aws/</loc>
+  </url><url>
+    <loc>http://localhost:1313/series/k8s/</loc>
   </url><url>
     <loc>http://localhost:1313/search/</loc>
   </url>

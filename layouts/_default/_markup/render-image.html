@@ -1,0 +1,10 @@
+{{- $alt := .Text -}}
+<img
+  src="{{ .Destination | safeURL }}"
+  alt="{{ $alt }}"
+  class="zoomable"
+  loading="lazy"
+/>
+{{- with .Title -}}
+<figcaption>{{ . }}</figcaption>
+{{- end -}}

@@ -1,8 +1,9 @@
 ---
 title: "CI/CD cho Docker: Mẫu bài viết với đầy đủ Markdown"
 date: 2025-09-07
-tags: ["devops", "docker", "ci-cd", "hugo", "papermod"]
+tags: ["devops", "docker"]
 categories: ["DevOps"]
+series: ["Docker"]
 author: "Cao Sơn"
 draft: false
 showToc: true
@@ -12,7 +13,7 @@ cover:
   alt: "CI/CD Pipeline"
   caption: "Demo CI/CD pipeline"
   relative: true
-  hidden: false
+  hidden: true
 ---
 
 > **Mục tiêu**: Bài viết _demo_ mọi thành phần Markdown bạn cần cho blog DevOps: tiêu đề, danh sách, bảng, code, hình, trích dẫn, chú thích, liên kết, checklists, footnotes[^1], và một chút math.
@@ -31,7 +32,7 @@ xuống hàng.
 - Bullet 2
   - Bullet 2.1
   - Bullet 2.2
-- Bullet 3
+- Bullet **3**
 
 1. Mục 1
 2. Mục 2
@@ -66,7 +67,7 @@ xuống hàng.
 
 Hugo shortcode _figure_ (hiện caption đẹp hơn):
 
-{{< figure src="/images/pipeline.png" alt="CI/CD Pipeline" caption="Figure: CI/CD overview" >}}
+{{< figure src="/images/pipeline.png" alt="CI/CD Pipeline" caption="Images 1: CI/CD overview" >}}
 
 > **Tip**: Nếu dùng _Page Bundle_, hãy đặt bài viết là `content/posts/docker-ci-cd/index.md` và ảnh chung thư mục: `content/posts/docker-ci-cd/pipeline.png`. Khi đó dùng đường dẫn tương đối như `./pipeline.png`.
 

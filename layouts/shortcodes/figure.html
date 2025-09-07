@@ -1,0 +1,6 @@
+<figure>
+  <img src="{{ .Get "src" }}" alt="{{ .Get "alt" }}" class="zoomable"
+  loading="lazy"> {{ with .Get "caption" }}
+  <figcaption>{{ . }}</figcaption>
+  {{ end }}
+</figure>

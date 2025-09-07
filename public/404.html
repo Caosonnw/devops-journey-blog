@@ -72,13 +72,28 @@
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/posts/" title="Posts">
-                    <span>Posts</span>
+                <a href="http://localhost:1313/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/search/" title="Search (Alt &#43; /)" accesskey=/>
-                    <span>Search</span>
+                <a href="http://localhost:1313/series/ci-cd/" title="CI/CD">
+                    <span>CI/CD</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/series/docker/" title="Docker">
+                    <span>Docker</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/series/k8s/" title="K8s">
+                    <span>K8s</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/series/aws/" title="AWS">
+                    <span>AWS</span>
                 </a>
             </li>
         </ul>
@@ -101,6 +116,25 @@
         <path d="M12 6H0l6-6z" />
     </svg>
 </a>
+<script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.8/dist/medium-zoom.min.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    
+    const zoom = mediumZoom(
+      ".post-content img.zoomable, article img.zoomable",
+      {
+        margin: 24, 
+        background: "rgba(0,0,0,.8)", 
+        scrollOffset: 0,
+      }
+    );
+
+    
+    
+    zoom.detach(".nozoom");
+  });
+</script>
+
 
 <script>
     let menu = document.getElementById('menu')

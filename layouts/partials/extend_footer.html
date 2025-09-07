@@ -1,0 +1,19 @@
+<!-- Medium Zoom (CDN) -->
+<script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.8/dist/medium-zoom.min.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // chỉ zoom ảnh trong nội dung bài viết
+    const zoom = mediumZoom(
+      ".post-content img.zoomable, article img.zoomable",
+      {
+        margin: 24, // khoảng cách viền
+        background: "rgba(0,0,0,.8)", // nền khi zoom
+        scrollOffset: 0,
+      }
+    );
+
+    // nếu cần loại trừ 1 ảnh cụ thể, cho nó class "nozoom"
+    // ví dụ: <img class="nozoom" ...> thì medium-zoom sẽ bỏ qua
+    zoom.detach(".nozoom");
+  });
+</script>

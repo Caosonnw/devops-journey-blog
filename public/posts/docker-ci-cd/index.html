@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
 <title>CI/CD cho Docker: Mẫu bài viết với đầy đủ Markdown | Caosonnw | DevOps Journey &amp; Blog | </title>
-<meta name="keywords" content="devops, docker, ci-cd, hugo, papermod">
+<meta name="keywords" content="devops, docker">
 <meta name="description" content="
 Mục tiêu: Bài viết demo mọi thành phần Markdown bạn cần cho blog DevOps: tiêu đề, danh sách, bảng, code, hình, trích dẫn, chú thích, liên kết, checklists, footnotes[^1], và một chút math.
 
@@ -146,13 +146,28 @@ Mục 2.2
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/posts/" title="Posts">
-                    <span>Posts</span>
+                <a href="http://localhost:1313/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/search/" title="Search (Alt &#43; /)" accesskey=/>
-                    <span>Search</span>
+                <a href="http://localhost:1313/series/ci-cd/" title="CI/CD">
+                    <span>CI/CD</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/series/docker/" title="Docker">
+                    <span>Docker</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/series/k8s/" title="K8s">
+                    <span>K8s</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/series/aws/" title="AWS">
+                    <span>AWS</span>
                 </a>
             </li>
         </ul>
@@ -162,18 +177,14 @@ Mục 2.2
 
 <article class="post-single">
   <header class="post-header">
-    
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/posts/">Posts</a></div>
     <h1 class="post-title entry-hint-parent">
       CI/CD cho Docker: Mẫu bài viết với đầy đủ Markdown
     </h1>
     <div class="post-meta"><span title='2025-09-07 00:00:00 +0000 UTC'>September 7, 2025</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Cao Sơn
 
 </div>
-  </header> 
-<figure class="entry-cover">
-        <img loading="eager" src="http://localhost:1313/images/pipeline.png" alt="CI/CD Pipeline">
-        <figcaption>Demo CI/CD pipeline</figcaption>
-</figure><div class="toc">
+  </header> <div class="toc">
     <details >
         <summary accesskey="c" title="(Alt + C)">
             <span class="details">Table of Contents</span>
@@ -221,7 +232,7 @@ xuống hàng.</p>
 <li>Bullet 2.2</li>
 </ul>
 </li>
-<li>Bullet 3</li>
+<li>Bullet <strong>3</strong></li>
 </ul>
 <ol>
 <li>Mục 1</li>
@@ -280,13 +291,18 @@ xuống hàng.</p>
 <hr>
 <h2 id="3-ảnh--figure">3) Ảnh &amp; Figure<a hidden class="anchor" aria-hidden="true" href="#3-ảnh--figure">#</a></h2>
 <p>Ảnh đơn giản (đặt file vào <code>static/images/pipeline.png</code>):</p>
-<p><img alt="CI/CD Pipeline" loading="lazy" src="images/pipeline.png"></p>
+<p><img
+  src="images/pipeline.png"
+  alt="CI/CD Pipeline"
+  class="zoomable"
+  loading="lazy"
+/></p>
 <p>Hugo shortcode <em>figure</em> (hiện caption đẹp hơn):</p>
 <figure>
-    <img loading="lazy" src="/images/pipeline.png"
-         alt="CI/CD Pipeline"/> <figcaption>
-            <p>Figure: CI/CD overview</p>
-        </figcaption>
+  <img src="/images/pipeline.png" alt="CI/CD Pipeline" class="zoomable"
+  loading="lazy"> 
+  <figcaption>Images 1: CI/CD overview</figcaption>
+  
 </figure>
 
 <blockquote>
@@ -309,10 +325,15 @@ xuống hàng.</p>
     <ul class="post-tags">
       <li><a href="http://localhost:1313/tags/devops/">Devops</a></li>
       <li><a href="http://localhost:1313/tags/docker/">Docker</a></li>
-      <li><a href="http://localhost:1313/tags/ci-cd/">Ci-Cd</a></li>
-      <li><a href="http://localhost:1313/tags/hugo/">Hugo</a></li>
-      <li><a href="http://localhost:1313/tags/papermod/">Papermod</a></li>
     </ul>
+<nav class="paginav">
+  <a class="next" href="http://localhost:1313/posts/install-gitlab/">
+    <span class="title">Next »</span>
+    <br>
+    <span>Install GitLab EE on Ubuntu 22.04: Step-by-Step Guide</span>
+  </a>
+</nav>
+
   </footer>
 </article>
     </main>
@@ -330,6 +351,25 @@ xuống hàng.</p>
         <path d="M12 6H0l6-6z" />
     </svg>
 </a>
+<script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.8/dist/medium-zoom.min.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    
+    const zoom = mediumZoom(
+      ".post-content img.zoomable, article img.zoomable",
+      {
+        margin: 24, 
+        background: "rgba(0,0,0,.8)", 
+        scrollOffset: 0,
+      }
+    );
+
+    
+    
+    zoom.detach(".nozoom");
+  });
+</script>
+
 
 <script>
     let menu = document.getElementById('menu')

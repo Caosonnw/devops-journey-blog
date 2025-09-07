@@ -7,14 +7,16 @@ pagination:
 
 outputs:
   home: ["HTML", "RSS", "JSON"]
-  section: ["HTML", "RSS"]
-  taxonomy: ["HTML", "RSS"]
-  term: ["HTML", "RSS"]
 
 enableRobotsTXT: true
 buildDrafts: false
 buildFuture: false
 buildExpired: false
+
+taxonomies:
+  tag: tags
+  category: categories
+  series: series
 
 params:
   description: "Sharing my DevOps projects, learning journey, and hands-on experiences with CI/CD, Jenkins, Docker, Kubernetes, and Cloud AWS."
@@ -22,7 +24,7 @@ params:
   homeInfoParams:
     Title: "Hi, I'm Caosonnw aka Elbio 👋"
     Content: >
-      👉 DevOps Journey — sharing hands-on notes on CI/CD, Jenkins, Docker, Kubernetes, and Cloud AWS.
+      👉 DevOps Journey — sharing hands-on notes on CI/CD, Jenkins, Docker, Kubernetes, and Cloud AWS.  
       Here you’ll find my latest blog posts and featured projects.
 
   socialIcons:
@@ -40,11 +42,12 @@ params:
 
   ShowReadingTime: true
   ShowShareButtons: false
-  ShowPostNavLinks: false
+  ShowPostNavLinks: true
   ShowCodeCopyButtons: true
   defaultTheme: "dark"
   ShowToc: true
   ShowSearch: true
+  ShowBreadCrumbs: true
 
   assets:
     favicon: "/logos/og-image-1200x630.png"
@@ -68,10 +71,22 @@ menu:
       name: Home
       url: /
       weight: 1
-    - identifier: posts
-      name: Posts
-      url: /posts/
-      weight: 2
+    - identifier: series-ci-cd
+      name: CI/CD
+      url: /series/ci-cd/
+      weight: 11
+    - identifier: series-docker
+      name: Docker
+      url: /series/docker/
+      weight: 12
+    - identifier: series-k8s
+      name: K8s
+      url: /series/k8s/
+      weight: 13
+    - identifier: series-aws
+      name: AWS
+      url: /series/aws/
+      weight: 14
     - identifier: search
       name: Search
       url: /search/
