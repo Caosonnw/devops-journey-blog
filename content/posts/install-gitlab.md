@@ -1,6 +1,6 @@
 ---
-title: "Install GitLab EE on Ubuntu 22.04: Step-by-Step Guide"
-date: 2025-09-07
+title: "CI/CD For Beginners #1 | Install GitLab EE on Ubuntu 22.04: Step-by-Step Guide"
+date: 2025-09-07T20:00:00+07:00
 series: ["CI-CD"]
 categories: ["CI-CD"]
 tags: ["ubuntu", "devops", "ci-cd"]
@@ -13,7 +13,8 @@ cover:
   alt: "Install GitLab server"
   caption: "Install GitLab server"
   relative: true
-  hidden: false
+  hiddenInList: true
+  hiddenInSingle: false
 ---
 
 > **Target**: This guide is for beginners and self-learners who want to practice DevOps by installing _GitLab EE on Ubuntu 22.04_. I'll use VMware to run a virtual machine so you don't need to spend money on renting servers or cloud resources — perfect for building your own lab at home.
