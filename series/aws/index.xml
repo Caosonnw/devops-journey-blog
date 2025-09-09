@@ -1,1 +1,30 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>AWS on Caosonnw | DevOps Journey &amp; Blog |</title><link>https://devops.caosonnw.dev/series/aws/</link><description>Recent content in AWS on Caosonnw | DevOps Journey &amp; Blog |</description><generator>Hugo -- 0.149.1</generator><language>en</language><atom:link href="https://devops.caosonnw.dev/series/aws/index.xml" rel="self" type="application/rss+xml"/></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>AWS on Caosonnw | DevOps Journey &amp; Blog</title><link>https://devops.caosonnw.dev/series/aws/</link><description>Recent content in AWS on Caosonnw | DevOps Journey &amp; Blog</description><generator>Hugo -- 0.149.1</generator><language>en</language><lastBuildDate>Thu, 30 Jan 2025 20:00:00 +0700</lastBuildDate><atom:link href="https://devops.caosonnw.dev/series/aws/index.xml" rel="self" type="application/rss+xml"/><item><title>AWS For Beginners #1 | Deploy a Website on AWS EC2 with Docker and NGINX</title><link>https://devops.caosonnw.dev/posts/aws-%231/</link><pubDate>Thu, 30 Jan 2025 20:00:00 +0700</pubDate><guid>https://devops.caosonnw.dev/posts/aws-%231/</guid><description>&lt;h1 id="aws-for-beginners-1-deploy-a-website-on-aws-ec2-with-docker-and-nginx"&gt;AWS For Beginners #1: Deploy a Website on AWS EC2 with Docker and NGINX&lt;/h1&gt;
+&lt;h2 id="-overview"&gt;🌟 Overview&lt;/h2&gt;
+&lt;p&gt;This comprehensive guide will take you through the complete process of deploying a website on &lt;strong&gt;AWS EC2&lt;/strong&gt; using &lt;strong&gt;Docker containerization&lt;/strong&gt; and &lt;strong&gt;NGINX reverse proxy&lt;/strong&gt;. You&amp;rsquo;ll master the art of leveraging EC2&amp;rsquo;s cloud computing power, Docker&amp;rsquo;s containerization benefits, and NGINX&amp;rsquo;s performance optimization capabilities.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="-prerequisites"&gt;📋 Prerequisites&lt;/h2&gt;
+&lt;p&gt;Before diving into this tutorial, make sure you have:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;✅ An active AWS account with appropriate permissions&lt;/li&gt;
+&lt;li&gt;✅ Basic understanding of Linux commands&lt;/li&gt;
+&lt;li&gt;✅ A website ready for deployment&lt;/li&gt;
+&lt;li&gt;✅ Familiarity with Docker concepts&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="-reference-materials"&gt;📚 Reference Materials&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://000004.awsstudygroup.com/en/"&gt;Amazon EC2 Fundamentals&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id="-step-1-create-ec2-ubuntu-instance"&gt;🚀 Step 1: Create EC2 Ubuntu Instance&lt;/h2&gt;
+&lt;h3 id="launch-your-ec2-instance"&gt;Launch Your EC2 Instance&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Navigate to the &lt;a href="https://console.aws.amazon.com/ec2/v2/home"&gt;EC2 Console&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Click &lt;strong&gt;&amp;ldquo;Launch Instance&amp;rdquo;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Select &lt;strong&gt;Ubuntu Server&lt;/strong&gt; as your operating system&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img
+src="https://devops.caosonnw.dev/aws-1/1.png"
+alt="EC2 Launch Interface"
+class="zoomable"
+loading="lazy"
+/&gt;&lt;/p&gt;</description></item></channel></rss>

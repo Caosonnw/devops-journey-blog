@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Caosonnw | DevOps Journey &amp; Blog |</title><link>https://devops.caosonnw.dev/</link><description>Recent content on Caosonnw | DevOps Journey &amp; Blog |</description><generator>Hugo -- 0.149.1</generator><language>en</language><lastBuildDate>Mon, 08 Sep 2025 21:40:00 +0700</lastBuildDate><atom:link href="https://devops.caosonnw.dev/index.xml" rel="self" type="application/rss+xml"/><item><title>CI/CD For Beginners #2 | CI/CD with GitLab Runner: Step-by-Step Guide</title><link>https://devops.caosonnw.dev/posts/ci-cd-gitlab-runner/</link><pubDate>Mon, 08 Sep 2025 21:40:00 +0700</pubDate><guid>https://devops.caosonnw.dev/posts/ci-cd-gitlab-runner/</guid><description>&lt;blockquote&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Caosonnw | DevOps Journey &amp; Blog</title><link>https://devops.caosonnw.dev/</link><description>Recent content on Caosonnw | DevOps Journey &amp; Blog</description><generator>Hugo -- 0.149.1</generator><language>en</language><lastBuildDate>Mon, 08 Sep 2025 21:40:00 +0700</lastBuildDate><atom:link href="https://devops.caosonnw.dev/index.xml" rel="self" type="application/rss+xml"/><item><title>CI/CD For Beginners #2 | CI/CD with GitLab Runner: Step-by-Step Guide</title><link>https://devops.caosonnw.dev/posts/ci-cd-gitlab-runner/</link><pubDate>Mon, 08 Sep 2025 21:40:00 +0700</pubDate><guid>https://devops.caosonnw.dev/posts/ci-cd-gitlab-runner/</guid><description>&lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;Target&lt;/strong&gt;: In this tutorial, you&amp;rsquo;ll learn how to set up and configure &lt;em&gt;GitLab Runner&lt;/em&gt; for CI/CD automation. We&amp;rsquo;ll cover installation, registration with GitLab, creating your first pipeline, and implementing automated testing and deployment workflows. By the end, you&amp;rsquo;ll have a fully functional CI/CD pipeline running on your own infrastructure.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;hr&gt;
 &lt;h1 id="introduction-"&gt;Introduction ✨&lt;/h1&gt;
@@ -8,4 +8,33 @@
 &lt;hr&gt;
 &lt;h1 id="introduction-"&gt;Introduction ✨&lt;/h1&gt;
 &lt;p&gt;&lt;strong&gt;What is GitLab EE?&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;GitLab EE (Enterprise Edition) is the commercial version of GitLab, offering advanced features and professional support for large enterprises and complex organizations. It includes enhanced user management, enterprise-grade security, high scalability, and dedicated technical support to help companies meet compliance and security requirements.&lt;/p&gt;</description></item></channel></rss>
+&lt;p&gt;GitLab EE (Enterprise Edition) is the commercial version of GitLab, offering advanced features and professional support for large enterprises and complex organizations. It includes enhanced user management, enterprise-grade security, high scalability, and dedicated technical support to help companies meet compliance and security requirements.&lt;/p&gt;</description></item><item><title>AWS For Beginners #1 | Deploy a Website on AWS EC2 with Docker and NGINX</title><link>https://devops.caosonnw.dev/posts/aws-%231/</link><pubDate>Thu, 30 Jan 2025 20:00:00 +0700</pubDate><guid>https://devops.caosonnw.dev/posts/aws-%231/</guid><description>&lt;h1 id="aws-for-beginners-1-deploy-a-website-on-aws-ec2-with-docker-and-nginx"&gt;AWS For Beginners #1: Deploy a Website on AWS EC2 with Docker and NGINX&lt;/h1&gt;
+&lt;h2 id="-overview"&gt;🌟 Overview&lt;/h2&gt;
+&lt;p&gt;This comprehensive guide will take you through the complete process of deploying a website on &lt;strong&gt;AWS EC2&lt;/strong&gt; using &lt;strong&gt;Docker containerization&lt;/strong&gt; and &lt;strong&gt;NGINX reverse proxy&lt;/strong&gt;. You&amp;rsquo;ll master the art of leveraging EC2&amp;rsquo;s cloud computing power, Docker&amp;rsquo;s containerization benefits, and NGINX&amp;rsquo;s performance optimization capabilities.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="-prerequisites"&gt;📋 Prerequisites&lt;/h2&gt;
+&lt;p&gt;Before diving into this tutorial, make sure you have:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;✅ An active AWS account with appropriate permissions&lt;/li&gt;
+&lt;li&gt;✅ Basic understanding of Linux commands&lt;/li&gt;
+&lt;li&gt;✅ A website ready for deployment&lt;/li&gt;
+&lt;li&gt;✅ Familiarity with Docker concepts&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="-reference-materials"&gt;📚 Reference Materials&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://000004.awsstudygroup.com/en/"&gt;Amazon EC2 Fundamentals&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id="-step-1-create-ec2-ubuntu-instance"&gt;🚀 Step 1: Create EC2 Ubuntu Instance&lt;/h2&gt;
+&lt;h3 id="launch-your-ec2-instance"&gt;Launch Your EC2 Instance&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Navigate to the &lt;a href="https://console.aws.amazon.com/ec2/v2/home"&gt;EC2 Console&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Click &lt;strong&gt;&amp;ldquo;Launch Instance&amp;rdquo;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Select &lt;strong&gt;Ubuntu Server&lt;/strong&gt; as your operating system&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img
+src="https://devops.caosonnw.dev/aws-1/1.png"
+alt="EC2 Launch Interface"
+class="zoomable"
+loading="lazy"
+/&gt;&lt;/p&gt;</description></item></channel></rss>

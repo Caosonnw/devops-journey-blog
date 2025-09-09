@@ -1,93 +1,30 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Docker on Caosonnw | DevOps Journey &amp; Blog | </title>
-    <link>http://localhost:1313/tags/docker/</link>
-    <description>Recent content in Docker on Caosonnw | DevOps Journey &amp; Blog | </description>
-    <generator>Hugo -- 0.149.1</generator>
-    <language>en</language>
-    <lastBuildDate>Sun, 07 Sep 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/docker/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>CI/CD cho Docker: Mẫu bài viết với đầy đủ Markdown</title>
-      <link>http://localhost:1313/posts/docker-ci-cd/</link>
-      <pubDate>Sun, 07 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/docker-ci-cd/</guid>
-      <description>&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;Mục tiêu&lt;/strong&gt;: Bài viết &lt;em&gt;demo&lt;/em&gt; mọi thành phần Markdown bạn cần cho blog DevOps: tiêu đề, danh sách, bảng, code, hình, trích dẫn, chú thích, liên kết, checklists, footnotes[^1], và một chút math.&lt;/p&gt;&lt;/blockquote&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Docker on Caosonnw | DevOps Journey &amp; Blog</title><link>https://devops.caosonnw.dev/tags/docker/</link><description>Recent content in Docker on Caosonnw | DevOps Journey &amp; Blog</description><generator>Hugo -- 0.149.1</generator><language>en</language><lastBuildDate>Thu, 30 Jan 2025 20:00:00 +0700</lastBuildDate><atom:link href="https://devops.caosonnw.dev/tags/docker/index.xml" rel="self" type="application/rss+xml"/><item><title>AWS For Beginners #1 | Deploy a Website on AWS EC2 with Docker and NGINX</title><link>https://devops.caosonnw.dev/posts/aws-%231/</link><pubDate>Thu, 30 Jan 2025 20:00:00 +0700</pubDate><guid>https://devops.caosonnw.dev/posts/aws-%231/</guid><description>&lt;h1 id="aws-for-beginners-1-deploy-a-website-on-aws-ec2-with-docker-and-nginx"&gt;AWS For Beginners #1: Deploy a Website on AWS EC2 with Docker and NGINX&lt;/h1&gt;
+&lt;h2 id="-overview"&gt;🌟 Overview&lt;/h2&gt;
+&lt;p&gt;This comprehensive guide will take you through the complete process of deploying a website on &lt;strong&gt;AWS EC2&lt;/strong&gt; using &lt;strong&gt;Docker containerization&lt;/strong&gt; and &lt;strong&gt;NGINX reverse proxy&lt;/strong&gt;. You&amp;rsquo;ll master the art of leveraging EC2&amp;rsquo;s cloud computing power, Docker&amp;rsquo;s containerization benefits, and NGINX&amp;rsquo;s performance optimization capabilities.&lt;/p&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;1-tiêu-đề--đoạn-văn&#34;&gt;1) Tiêu đề &amp;amp; Đoạn văn&lt;/h2&gt;
-&lt;p&gt;Đây là một đoạn văn mẫu. Bạn có thể &lt;strong&gt;in đậm&lt;/strong&gt;, &lt;em&gt;in nghiêng&lt;/em&gt;, hoặc `inline code`.&lt;br&gt;
-Dòng ngắt&lt;br&gt;
-xuống hàng.&lt;/p&gt;
-&lt;h3 id=&#34;11-danh-sách&#34;&gt;1.1) Danh sách&lt;/h3&gt;
+&lt;h2 id="-prerequisites"&gt;📋 Prerequisites&lt;/h2&gt;
+&lt;p&gt;Before diving into this tutorial, make sure you have:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Bullet 1&lt;/li&gt;
-&lt;li&gt;Bullet 2
+&lt;li&gt;✅ An active AWS account with appropriate permissions&lt;/li&gt;
+&lt;li&gt;✅ Basic understanding of Linux commands&lt;/li&gt;
+&lt;li&gt;✅ A website ready for deployment&lt;/li&gt;
+&lt;li&gt;✅ Familiarity with Docker concepts&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="-reference-materials"&gt;📚 Reference Materials&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Bullet 2.1&lt;/li&gt;
-&lt;li&gt;Bullet 2.2&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://000004.awsstudygroup.com/en/"&gt;Amazon EC2 Fundamentals&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Bullet &lt;strong&gt;3&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id="-step-1-create-ec2-ubuntu-instance"&gt;🚀 Step 1: Create EC2 Ubuntu Instance&lt;/h2&gt;
+&lt;h3 id="launch-your-ec2-instance"&gt;Launch Your EC2 Instance&lt;/h3&gt;
 &lt;ol&gt;
-&lt;li&gt;Mục 1&lt;/li&gt;
-&lt;li&gt;Mục 2
-&lt;ol&gt;
-&lt;li&gt;Mục 2.1&lt;/li&gt;
-&lt;li&gt;Mục 2.2&lt;/li&gt;
+&lt;li&gt;Navigate to the &lt;a href="https://console.aws.amazon.com/ec2/v2/home"&gt;EC2 Console&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Click &lt;strong&gt;&amp;ldquo;Launch Instance&amp;rdquo;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Select &lt;strong&gt;Ubuntu Server&lt;/strong&gt; as your operating system&lt;/li&gt;
 &lt;/ol&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3 id=&#34;12-danh-sách-công-việc-task-list&#34;&gt;1.2) Danh sách công việc (Task list)&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Tạo repo&lt;/li&gt;
-&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Cấu hình GitHub Actions&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Viết bài “Observability với Grafana”&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Thêm search (Lunr/Algolia)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;2-bảng-table&#34;&gt;2) Bảng (Table)&lt;/h2&gt;
-&lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th&gt;Stage&lt;/th&gt;
-          &lt;th&gt;Action&lt;/th&gt;
-          &lt;th&gt;Tool&lt;/th&gt;
-          &lt;th&gt;Result&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td&gt;Build&lt;/td&gt;
-          &lt;td&gt;Compile &amp;amp; Lint&lt;/td&gt;
-          &lt;td&gt;Node.js, ESLint&lt;/td&gt;
-          &lt;td&gt;Artifacts + Reports&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;Test&lt;/td&gt;
-          &lt;td&gt;Unit + Integration&lt;/td&gt;
-          &lt;td&gt;Jest&lt;/td&gt;
-          &lt;td&gt;PASS/FAIL&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;Package&lt;/td&gt;
-          &lt;td&gt;Docker build/push&lt;/td&gt;
-          &lt;td&gt;Docker, GHCR&lt;/td&gt;
-          &lt;td&gt;Tagged Image&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;Deploy&lt;/td&gt;
-          &lt;td&gt;Pages (static) / Helm&lt;/td&gt;
-          &lt;td&gt;GitHub Pages / k8s&lt;/td&gt;
-          &lt;td&gt;Site up / App upgraded&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;3-ảnh--figure&#34;&gt;3) Ảnh &amp;amp; Figure&lt;/h2&gt;
-&lt;p&gt;Ảnh đơn giản (đặt file vào &lt;code&gt;static/images/pipeline.png&lt;/code&gt;):&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+&lt;p&gt;&lt;img
+src="https://devops.caosonnw.dev/aws-1/1.png"
+alt="EC2 Launch Interface"
+class="zoomable"
+loading="lazy"
+/&gt;&lt;/p&gt;</description></item></channel></rss>
